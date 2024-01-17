@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+input, textarea {
+  width: 40%;
+  padding: 10px;
+  border: 3px solid rgb(91, 150, 238);
+  margin: 5px;
+}
+
+
+
+
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 6px solid lightblue;
+  margin: 16px ;
+}
+
+
+
+.newspaper1 {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 6px solid rgb(27, 76, 92);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #d2a7f5;
+  
+}
+h1 { font-size: 90px;
+  background-color: #137252;
+  width: 50%;
+  color: white;
+  margin-left: 280px;
+
+}
+/* Style the header */
+.header {
+  background-color: #9fcee9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #6056f1;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #f3b7b7;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  background-color: #f8dcdc;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+        
+  }
+}
+
+/* c  */
+div.gallery {
+  border: 4px solid #71b5ec;
+}
+
+div.gallery:hover {
+  border: 4px solid #cf6ef5;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>FaizanMedico</h1>
+  <p>My web to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+<div class="row">
+
+  <div class="column">
+    <h2>Column1</h2>
+    <img src="2.png" alt="F" width="250" height="250">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column2</h2>
+    <img src="2.png" alt="F" width="250" height="250">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column3</h2>
+    <img src="2.png" alt="F" width="250" height="250">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+
+
+<h3>..........Photo Gallery.</h3>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.png">
+      <img src="4.png" alt="p" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.png">
+      <img src="4.png" alt="F" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.png">
+      <img src="4.png" alt="N" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.png">
+      <img src="4.png" alt="M" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<p>Sultan Ahmed</p>
+
+<div class="row">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+    <div class="column">
+      <h2>Column1</h2>
+      <img src="2.png" alt="F" width="250" height="250">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+    
+    <div class="column">
+      <h2>Column2</h2>
+      <img src="2.png" alt="F" width="250" height="250">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+    
+    <div class="column">
+      <h2>Column3</h2>
+      <img src="2.png" alt="F" width="250" height="250">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+
+<H2>WWWW</H2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+    <div class="newspaper1">
+      <img src="2.png" alt="F" width="250" height="250">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+        euismod </p>
+      <img src="2.png" alt="F" width="250" height="250">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+        euismod </p>
+      <img src="2.png" alt="F" width="250" height="250">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+        euismod </p>
+      </div>
+      
+      </div>
+
+<h6>www</h6>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+<div class="column">
+  <h2>Column2</h2>
+  <img src="2.png" alt="F" width="250" height="250">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+</div>
+
+<div class="column">
+  <h2>Column3</h2>
+  <img src="2.png" alt="F" width="250" height="250">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+</div>
+</div>
+
+
+
+  
+<div class="newspaper">
+  
+<img src="2.png" alt="F" width="250" height="250">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+ <img src="2.png" alt="F" width="250" height="250">
+ <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+<img src="2.png" alt="F" width="250" height="250">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+  euismod </p>
+</div>
+</div>
+</div>
+
+<br><br><br>
+<form action="/action_page.php"><br><br><br>
+
+&nbsp;&nbsp;  First name:<br>
+  <input type="text" name="firstname" value="Sultan"><br>
+ &nbsp;&nbsp; Last name:<br>
+  <input type="text" name="lastname" value="Ahmed"><br>
+&nbsp;&nbsp;  Comments:<br>
+  <textarea name="message" rows="5" cols="30">
+  </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p><strong>&nbsp;&nbsp;&nbsp;Sultan Ahmed</strong> <br><br><br>&nbsp;&nbsp;Pakistan Karachi</p>
+
+</body>
+</html>
+
+
